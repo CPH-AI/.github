@@ -125,7 +125,7 @@ AI는 도구를 넘어 **공동 창작자**가 되어가고 있고,
       <br/>
       <sub><b><i>Schrödinger</i></b></sub>
       <br/>
-      <sub>여러 상태를 동시 굴리는 사람람</sub>
+      <sub>여러 상태를 동시 굴리는 사람</sub>
     </td>
   </tr>
 </table>
