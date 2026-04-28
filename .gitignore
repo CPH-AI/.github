@@ -1,0 +1,269 @@
+# =============================================================================
+# Advanced RL Deep Dive — .gitignore
+# =============================================================================
+
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Distribution / Packaging
+.Python
+build/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+MANIFEST
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Jupyter Notebook ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ── NumPy / PyTorch / RL framework cache ─────────────────────────────────────
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.ckpt
+
+# Framework caches (PyTorch, Stable-Baselines3, CleanRL)
+.torch_cache/
+.sb3_cache/
+.cleanrl_cache/
+
+# ── Gymnasium / MuJoCo cache ─────────────────────────────────────────────────
+# MuJoCo binary / license files (구버전 호환)
+mjkey.txt
+mujoco200/
+mujoco210/
+mjpro150/
+.mujoco/
+
+# Gymnasium / Gym 환경 캐시
+.gym_cache/
+.gymnasium_cache/
+
+# Atari ROM (legal 이슈로 절대 commit 금지)
+*.bin
+roms/
+atari_roms/
+
+# ── Replay buffer / 학습 데이터 ──────────────────────────────────────────────
+# Replay buffer 직렬화 (Off-policy: SAC, TD3, DDPG, CQL, TD3+BC)
+replay_buffer/
+replays/
+*.replay
+*.buffer
+
+# Trajectory / rollout 저장
+trajectories/
+rollouts/
+demonstrations/
+
+# Offline RL dataset (D4RL, RL Unplugged 등)
+# Ch7-01 CQL · TD3+BC · BCQ · IQL 실험에서 사용
+d4rl/
+rl_unplugged/
+offline_data/
+*.h5
+*.hdf5
+
+# ── Experiment outputs ───────────────────────────────────────────────────────
+# 생성된 시각화·학습 곡선·plot (각 챕터)
+# Ch1: Performance Difference Lemma · Trust Region bound visualization · KL trajectory
+# Ch2: TRPO 의 KL trajectory · CG iteration · line search backtrack 횟수
+# Ch3: PPO clipping ratio 분포 · ε ablation · GAE λ 비교
+# Ch4: SAC entropy plot · α 자동 튜닝 trajectory · soft Bellman 수렴
+# Ch5: TD3 Q-value 과대추정 ablation · target smoothing 효과 · delayed update 비교
+# Ch6: MuJoCo 5환경 × 5알고리즘 benchmark · sample efficiency curve
+# Ch7: CQL OOD penalty · Dreamer world model rollout · MAML adaptation curve · DPO loss
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.gif
+*.mp4
+*.webm
+*.webp
+
+# 훈련 결과 / 체크포인트
+results/
+outputs/
+logs/
+checkpoints/
+runs/
+wandb/
+mlruns/
+tensorboard/
+tb_logs/
+lightning_logs/
+*.log
+*.csv
+*.tfevents.*
+
+# 환경별 video recording (gymnasium video wrapper)
+videos/
+recordings/
+*.mov
+*.avi
+
+# 재현 실험 산출물 (논문별)
+reproductions/kakade2002_apprx/*.pkl
+reproductions/schulman2015_trpo/*.pt
+reproductions/schulman2017_ppo/*.pt
+reproductions/haarnoja2018_sac/*.pt
+reproductions/haarnoja2019_sac_auto/*.pt
+reproductions/fujimoto2018_td3/*.pt
+reproductions/lillicrap2016_ddpg/*.pt
+reproductions/espeholt2018_impala/*.pt
+reproductions/horgan2018_apex/*.pt
+reproductions/kapturowski2019_r2d2/*.pt
+reproductions/kumar2020_cql/*.pt
+reproductions/fujimoto2021_td3bc/*.pt
+reproductions/fujimoto2019_bcq/*.pt
+reproductions/kostrikov2022_iql/*.pt
+reproductions/hafner2019_dreamer/*.pt
+reproductions/schrittwieser2020_muzero/*.pt
+reproductions/finn2017_maml/*.pt
+reproductions/duan2016_rl2/*.pt
+reproductions/christiano2017_rlhf/*.pt
+reproductions/ouyang2022_instructgpt/*.pt
+reproductions/rafailov2023_dpo/*.pt
+
+# Pretrained weights / reward models
+pretrained/
+weights/
+reward_models/
+
+# ── RLHF / LLM 관련 (Ch7-04) ─────────────────────────────────────────────────
+# Reward model · preference dataset · SFT checkpoint
+preference_data/
+sft_checkpoints/
+rm_checkpoints/
+
+# HuggingFace cache (RLHF 실험에서 사용)
+.cache/huggingface/
+hub/
+models--*/
+datasets_cache/
+
+# ── Hyperparameter sweeps ────────────────────────────────────────────────────
+sweeps/
+optuna_studies/
+*.db
+*.sqlite
+*.sqlite3
+
+# ── IDE / Editor ─────────────────────────────────────────────────────────────
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+
+# ── Documentation build ──────────────────────────────────────────────────────
+docs/_build/
+docs/generated/
+site/
+.mkdocs_cache/
+
+# ── Secrets / Credentials ────────────────────────────────────────────────────
+.env.local
+.env.*.local
+secrets.py
+credentials.json
+*.pem
+*.key
+openai_api_key*
+hf_token*
+wandb_api_key*
+
+# ── GPU / CUDA cache ─────────────────────────────────────────────────────────
+.nv_cache/
+.nvidia/
+*.cu.o
+.torch_extensions/
+
+# ── Compiled extensions / build artifacts ────────────────────────────────────
+*.ninja
+*.ninja_log
+*.ninja_deps
+
+# ── Miscellaneous ────────────────────────────────────────────────────────────
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+*.mo
+*.pot
+
+# data/ 디렉토리 (학습용 데이터 보존)
+data/
+datasets/
+raw/
+processed/
+!data/.gitkeep
