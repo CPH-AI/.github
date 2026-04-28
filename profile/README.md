@@ -77,72 +77,69 @@ AI는 도구를 넘어 **공동 창작자**가 되어가고 있고,
   <tr>
     <td align="center" width="25%">
       <a href="https://github.com/e9ua1">
-        <img src="https://github.com/e9ua1.png" width="120" alt="IQ"/>
+        <img src="./assets/avatars/einstein.svg" width="140" alt="Einstein"/>
       </a>
       <br/>
       <b>IQ</b>
       <br/>
       <code>@e9ua1</code>
       <br/>
-      <sub>🟠 <b>Bohr</b></sub>
+      <sub><b><i>Einstein</i></b></sub>
       <br/>
-      <sub><i>코펜하겐의 주최자</i></sub>
+      <sub>납득될 때까지 토 다는 사람</sub>
     </td>
     <td align="center" width="25%">
       <a href="https://github.com/Chocoding1">
-        <img src="https://github.com/Chocoding1.png" width="120" alt="Chocoding1"/>
+        <img src="./assets/avatars/bohr.svg" width="140" alt="Bohr"/>
       </a>
       <br/>
       <b>Chocoding1</b>
       <br/>
       <code>@Chocoding1</code>
       <br/>
-      <sub>⚪ <i>TBD</i></sub>
+      <sub><b><i>Bohr</i></b></sub>
       <br/>
-      <sub><i>첫 세션에서 결정</i></sub>
+      <sub>합의의 중심에서 흐름을 잡는 사람</sub>
     </td>
     <td align="center" width="25%">
       <a href="https://github.com/Jaeminjeong1">
-        <img src="https://github.com/Jaeminjeong1.png" width="120" alt="Jeong Jaemin"/>
+        <img src="./assets/avatars/heisenberg.svg" width="140" alt="Heisenberg"/>
       </a>
       <br/>
       <b>Jeong Jaemin</b>
       <br/>
       <code>@Jaeminjeong1</code>
       <br/>
-      <sub>⚪ <i>TBD</i></sub>
+      <sub><b><i>Heisenberg</i></b></sub>
       <br/>
-      <sub><i>첫 세션에서 결정</i></sub>
+      <sub>확정 짓기 전에 일단 부딪쳐보는 사람</sub>
     </td>
     <td align="center" width="25%">
       <a href="https://github.com/JohnPrk">
-        <img src="https://github.com/JohnPrk.png" width="120" alt="박민욱"/>
+        <img src="./assets/avatars/schrodinger.svg" width="140" alt="Schrödinger"/>
       </a>
       <br/>
       <b>박민욱</b>
       <br/>
       <code>@JohnPrk</code>
       <br/>
-      <sub>⚪ <i>TBD</i></sub>
+      <sub><b><i>Schrödinger</i></b></sub>
       <br/>
-      <sub><i>첫 세션에서 결정</i></sub>
+      <sub>상태를 동시에 여러 개 굴리는 사람</sub>
     </td>
   </tr>
 </table>
 
 <details>
-<summary><b>📜 Solvay 1927 인물 매칭 후보</b> (각자 첫 세션에서 선택)</summary>
+<summary><b>📜 Solvay 1927 인물 소개</b></summary>
 <br/>
 
 | Physicist | Known For | Vibe |
 |---|---|---|
+| `Einstein` | 회의주의자 · "신은 주사위를 던지지 않는다" | _납득될 때까지 토 다는 사람_ |
+| `Bohr` | 코펜하겐 학파의 수장 · 보어 모델 | _합의의 중심에서 흐름을 잡는 사람_ |
 | `Heisenberg` | 불확정성 원리 | _확정 짓기 전에 일단 부딪쳐보는 사람_ |
 | `Schrödinger` | 파동 방정식 · 고양이 사고실험 | _상태를 동시에 여러 개 굴리는 사람_ |
-| `Einstein` | 회의주의자 · "신은 주사위를 던지지 않는다" | _납득될 때까지 토 다는 사람_ |
-| `Pauli` | 배타원리 · 신랄한 비판 | _"그건 틀린 것도 아니다"_ 를 시전하는 사람 |
-| `Dirac` | 디랙 방정식 · 극단적 과묵 | _말은 적게, 결과는 우아하게_ |
-| `Curie` | 두 차례 노벨상 · 유일한 여성 | _아무도 안 가는 길을 두 번 가는 사람_ |
-| `de Broglie` | 물질파 | _경계를 흐리는 사람_ |
 
 </details>
 
