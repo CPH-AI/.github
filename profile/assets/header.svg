@@ -5,8 +5,12 @@
       <stop offset="100%" stop-color="#0a0e1a"/>
     </radialGradient>
     <radialGradient id="nGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.55"/>
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
@@ -19,11 +23,62 @@
     <path d="M700 0 V360"/>
   </g>
 
-  <!-- Background atomic orbits -->
+  <!-- Background atomic orbits (양자) -->
   <g transform="translate(700 180)" opacity="0.5" fill="none" stroke="#30363d" stroke-width="0.6">
     <ellipse rx="560" ry="170"/>
     <ellipse rx="560" ry="170" transform="rotate(60)"/>
     <ellipse rx="560" ry="170" transform="rotate(-60)"/>
+  </g>
+
+  <!-- Latent space graph - LEFT (AI / embedding signature) -->
+  <g opacity="0.4">
+    <!-- Subtle edges -->
+    <g stroke="#58a6ff" stroke-width="0.4" opacity="0.5">
+      <line x1="120" y1="80" x2="200" y2="130"/>
+      <line x1="200" y1="130" x2="260" y2="90"/>
+      <line x1="200" y1="130" x2="160" y2="220"/>
+      <line x1="160" y1="220" x2="80" y2="270"/>
+      <line x1="160" y1="220" x2="240" y2="260"/>
+      <line x1="240" y1="260" x2="290" y2="320"/>
+      <line x1="80" y1="180" x2="160" y2="220"/>
+    </g>
+    <g fill="#58a6ff">
+      <circle cx="120" cy="80" r="1.2"/>
+      <circle cx="200" cy="130" r="1.4"/>
+      <circle cx="260" cy="90" r="1.2"/>
+      <circle cx="80" cy="180" r="1.2"/>
+      <circle cx="160" cy="220" r="1.4"/>
+      <circle cx="240" cy="260" r="1.2"/>
+      <circle cx="80" cy="270" r="1.1"/>
+      <circle cx="290" cy="320" r="1.1"/>
+      <circle cx="320" cy="170" r="1.0"/>
+      <circle cx="60" cy="60" r="0.9"/>
+    </g>
+  </g>
+
+  <!-- Latent space graph - RIGHT -->
+  <g opacity="0.4">
+    <g stroke="#58a6ff" stroke-width="0.4" opacity="0.5">
+      <line x1="1280" y1="80" x2="1200" y2="130"/>
+      <line x1="1200" y1="130" x2="1140" y2="90"/>
+      <line x1="1200" y1="130" x2="1240" y2="220"/>
+      <line x1="1240" y1="220" x2="1320" y2="270"/>
+      <line x1="1240" y1="220" x2="1160" y2="260"/>
+      <line x1="1160" y1="260" x2="1110" y2="320"/>
+      <line x1="1320" y1="180" x2="1240" y2="220"/>
+    </g>
+    <g fill="#58a6ff">
+      <circle cx="1280" cy="80" r="1.2"/>
+      <circle cx="1200" cy="130" r="1.4"/>
+      <circle cx="1140" cy="90" r="1.2"/>
+      <circle cx="1320" cy="180" r="1.2"/>
+      <circle cx="1240" cy="220" r="1.4"/>
+      <circle cx="1160" cy="260" r="1.2"/>
+      <circle cx="1320" cy="270" r="1.1"/>
+      <circle cx="1110" cy="320" r="1.1"/>
+      <circle cx="1080" cy="170" r="1.0"/>
+      <circle cx="1340" cy="60" r="0.9"/>
+    </g>
   </g>
 
   <!-- Top meta strip -->
@@ -45,24 +100,56 @@
         font-family="Georgia, serif" font-style="italic" font-size="20"
         fill="#8b949e" letter-spacing="0.08em">Mastering the Art of AI Utilization</text>
 
-  <!-- Divider with mini atom -->
-  <g transform="translate(700 250)">
-    <line x1="-220" x2="-32" stroke="#30363d" stroke-width="0.6"/>
+  <!-- Divider with hybrid quantum-neural icon (larger) -->
+  <g transform="translate(700 252)">
+    <line x1="-220" x2="-72" stroke="#30363d" stroke-width="0.6"/>
+
+    <!-- Hybrid Quantum + Neural Icon -->
     <g>
-      <ellipse rx="22" ry="7" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.7"/>
-      <ellipse rx="22" ry="7" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.7" transform="rotate(60)"/>
-      <ellipse rx="22" ry="7" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.7" transform="rotate(-60)"/>
-      <circle r="9" fill="url(#nGlow)"/>
-      <circle r="1.6" fill="#ff6b35"/>
+      <!-- Atom orbits (양자, 외곽) -->
+      <ellipse rx="60" ry="20" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.4" transform="rotate(28)"/>
+      <ellipse rx="60" ry="20" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.4" transform="rotate(-28)"/>
+
+      <!-- Neural diamond outer edges (AI, 4 members connected) -->
+      <path d="M 0 -26 L 26 0 L 0 26 L -26 0 Z" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.7"/>
+
+      <!-- Inner dashed spokes (signal flow from hub) -->
+      <g stroke="#58a6ff" stroke-width="0.5" opacity="0.5" stroke-dasharray="2 2">
+        <line x1="0" y1="0" x2="0" y2="-26"/>
+        <line x1="0" y1="0" x2="26" y2="0"/>
+        <line x1="0" y1="0" x2="0" y2="26"/>
+        <line x1="0" y1="0" x2="-26" y2="0"/>
+      </g>
+
+      <!-- Node glows -->
+      <g fill="url(#eGlow)">
+        <circle cx="0" cy="-26" r="8"/>
+        <circle cx="26" cy="0" r="8"/>
+        <circle cx="0" cy="26" r="8"/>
+        <circle cx="-26" cy="0" r="8"/>
+      </g>
+
+      <!-- 4 nodes (members / electrons) -->
+      <g fill="#58a6ff">
+        <circle cx="0" cy="-26" r="3"/>
+        <circle cx="26" cy="0" r="3"/>
+        <circle cx="0" cy="26" r="3"/>
+        <circle cx="-26" cy="0" r="3"/>
+      </g>
+
+      <!-- Hub: nucleus / attention head -->
+      <circle r="18" fill="url(#nGlow)"/>
+      <circle r="3.5" fill="#ff6b35"/>
     </g>
-    <line x1="32" x2="220" stroke="#30363d" stroke-width="0.6"/>
+
+    <line x1="72" x2="220" stroke="#30363d" stroke-width="0.6"/>
   </g>
 
   <!-- Quote -->
-  <text x="700" y="298" text-anchor="middle"
+  <text x="700" y="305" text-anchor="middle"
         font-family="Georgia, serif" font-style="italic" font-size="13"
         fill="#6e7681">&quot;Anyone who is not shocked by quantum theory has not understood it.&quot;</text>
-  <text x="700" y="324" text-anchor="middle"
+  <text x="700" y="330" text-anchor="middle"
         font-family="'SF Mono', Consolas, monospace" font-size="10"
         fill="#8b949e" letter-spacing="0.35em" word-spacing="0.5em">NIELS BOHR · 1927</text>
 </svg>
