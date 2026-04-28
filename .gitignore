@@ -105,7 +105,6 @@ offline_data/
 *.png
 *.jpg
 *.jpeg
-*.svg
 *.pdf
 *.gif
 *.mp4
