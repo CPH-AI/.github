@@ -112,7 +112,7 @@ AI는 도구를 넘어 **공동 창작자**가 되어가고 있고,
       <br/>
       <sub><b><i>Heisenberg</i></b></sub>
       <br/>
-      <sub>확정 짓기 전 일단 부딪쳐보는 사람</sub>
+      <sub>확정 전 일단 부딪치는 사람</sub>
     </td>
     <td align="center" width="25%">
       <a href="https://github.com/JohnPrk">
