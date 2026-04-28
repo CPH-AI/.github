@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360" width="1400" height="360" role="img" aria-label="Copenhagen AI — Mastering the Art of AI Utilization">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#1a1f2e"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </radialGradient>
+    <radialGradient id="nGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="360" fill="url(#bg)"/>
+
+  <!-- Conference grid (subtle crosshair) -->
+  <g opacity="0.05" stroke="#58a6ff" stroke-width="0.5">
+    <path d="M0 180 H1400"/>
+    <path d="M700 0 V360"/>
+  </g>
+
+  <!-- Background atomic orbits -->
+  <g transform="translate(700 180)" opacity="0.5" fill="none" stroke="#30363d" stroke-width="0.6">
+    <ellipse rx="560" ry="170"/>
+    <ellipse rx="560" ry="170" transform="rotate(60)"/>
+    <ellipse rx="560" ry="170" transform="rotate(-60)"/>
+  </g>
+
+  <!-- Top meta strip -->
+  <g transform="translate(700 50)">
+    <line x1="-200" x2="-105" stroke="#30363d" stroke-width="0.6"/>
+    <text x="0" y="4" text-anchor="middle"
+          font-family="'SF Mono', Consolas, monospace" font-size="11"
+          fill="#58a6ff" letter-spacing="0.4em" word-spacing="0.2em">EST. 2025 · BRUSSELS IN SPIRIT</text>
+    <line x1="105" x2="200" stroke="#30363d" stroke-width="0.6"/>
+  </g>
+
+  <!-- Title -->
+  <text x="700" y="170" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="78"
+        fill="#f0f6fc" letter-spacing="0.06em">COPENHAGEN AI</text>
+
+  <!-- Subtitle -->
+  <text x="700" y="212" text-anchor="middle"
+        font-family="Georgia, serif" font-style="italic" font-size="20"
+        fill="#8b949e" letter-spacing="0.08em">Mastering the Art of AI Utilization</text>
+
+  <!-- Divider with mini atom -->
+  <g transform="translate(700 250)">
+    <line x1="-220" x2="-32" stroke="#30363d" stroke-width="0.6"/>
+    <g>
+      <ellipse rx="22" ry="7" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.7"/>
+      <ellipse rx="22" ry="7" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.7" transform="rotate(60)"/>
+      <ellipse rx="22" ry="7" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.7" transform="rotate(-60)"/>
+      <circle r="9" fill="url(#nGlow)"/>
+      <circle r="1.6" fill="#ff6b35"/>
+    </g>
+    <line x1="32" x2="220" stroke="#30363d" stroke-width="0.6"/>
+  </g>
+
+  <!-- Quote -->
+  <text x="700" y="298" text-anchor="middle"
+        font-family="Georgia, serif" font-style="italic" font-size="13"
+        fill="#6e7681">&quot;Anyone who is not shocked by quantum theory has not understood it.&quot;</text>
+  <text x="700" y="324" text-anchor="middle"
+        font-family="'SF Mono', Consolas, monospace" font-size="10"
+        fill="#8b949e" letter-spacing="0.35em" word-spacing="0.5em">NIELS BOHR · 1927</text>
+</svg>
