@@ -9,19 +9,7 @@
 <br/><br/>
 
 <a href="https://cph-ai.github.io">
-  <img src="https://api.iconify.design/lucide/atom.svg?color=%23c8941d" width="32"/>
-</a>
-
-<br/><br/>
-
-**[Copenhagen AI · Official Site](https://cph-ai.github.io)**
-
-<sub>회의록 · 회고 · 실험 기록 · Open Questions</sub>
-
-<br/>
-
-<a href="https://cph-ai.github.io">
-  <img src="https://img.shields.io/badge/cph--ai.github.io-c8941d?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/⚛︎%20%20cph--ai.github.io%20%20%E2%80%94%20%20%ED%9A%8C%EC%9D%98%EB%A1%9D%20%C2%B7%20%ED%9A%8C%EA%B3%A0%20%C2%B7%20Open%20Questions-c8941d?style=for-the-badge&logoColor=white"/>
 </a>
 
 </div>
