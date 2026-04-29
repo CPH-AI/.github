@@ -4,21 +4,23 @@
 
 <br/><br/>
 
-<a href="https://cph-ai.github.io">
-  <img src="https://api.iconify.design/lucide/atom.svg?color=%23c8941d" width="32"/>
+<a href="https://cph-ai.github.io" style="text-decoration: none;">
+  <img src="https://api.iconify.design/lucide/atom.svg?color=%23c8941d" width="64"/>
+  <br/>
+  <h2>Copenhagen AI · Official Site</h2>
 </a>
 
-<br/><br/>
-
-**[Copenhagen AI · Official Site](https://cph-ai.github.io)**
-
-<sub>회의록 · 회고 · 실험 기록 · Open Questions</sub>
+<p><sub>회의록 · 회고 · 실험 기록 · Open Questions</sub></p>
 
 <br/>
 
 <a href="https://cph-ai.github.io">
-  <img src="https://img.shields.io/badge/cph--ai.github.io-c8941d?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Visit%20Official%20Site-c8941d?style=for-the-badge&logo=github&logoColor=white" height="45"/>
 </a>
+
+<br/><br/>
+
+</div>
 
 
 ---
