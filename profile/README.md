@@ -189,11 +189,11 @@ We don't ship answers. We ship questions sharper than yesterday.
 <table>
   <tr>
     <td>📡 <b>Conference Log</b></td>
-    <td><i>coming soon — 매주 세션의 기록이 여기에 쌓인다</i></td>
+    <td><a href="https://cph-ai.github.io/#/conferences">cph-ai.github.io/#/conferences</a> — 매주 세션의 기록</td>
   </tr>
   <tr>
     <td>🌍 <b>GitHub Pages</b></td>
-    <td><i>coming soon — copenhagen-ai.github.io</i></td>
+    <td><a href="https://cph-ai.github.io">cph-ai.github.io</a> — 기관 공식 사이트</td>
   </tr>
   <tr>
     <td>📚 <b>Reading List</b></td>
